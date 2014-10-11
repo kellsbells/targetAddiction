@@ -38,25 +38,25 @@ var lifePoints = 10;
 
 
 
-var shoppingDecision = function(prompt3, alert1, alert2, lifePointsYes, dollarsNew, lifePointsNo){
+var shoppingDecision = function(prompt3, alert1, alert2, lifePointsDelta, dollarsDelta, lifePointsNo){
     do {
       var answer3 = prompt(prompt3);
-      console.log(answer3);
       answer3.toLowerCase();
         if(answer3 === "yes") {
         alert(alert1);
-        (lifePointsYes);
-        (dollarsNew);
+        (lifePoints) + (lifePointsDelta);
+        (dollars) + (dollarsDelta);
       } else if (answer3 === "no") {
         alert(alert2);
-        (lifePointsNo); 
+        (lifePointsNo) + (lifePoints); 
        }else{
         alert("Please answer Yes or No");
        } 
     } while (answer3 !== "yes" && answer3 !== "no");
 
   if(lifePoints <= 0 || dollars <= 0){
-    return alert("You're all out of money or lifepoints");
+    alert("You're all out of money or lifepoints");
+    exit();
     //stops running loop now and game ends.
   }else{
     alert("You have " + lifePoints + " lifepoints and $" + dollars + " left");
@@ -75,9 +75,9 @@ shoppingDecision(
   "You see the most adorable Halloween themed handtowels on sale for $4. Do you buy? Yes or No?",
   "You loose 3 life points because themed handtowels...ain\'t nobdy got time for dat!",
   "Gain 1 life point because you're not distracted by pointless things",
-  lifePoints-=3,
-  dollars-=4,
-  lifePoints+=1
+  -3,
+  -4,
+  1
   );
 
 
@@ -89,9 +89,9 @@ shoppingDecision(
   "You've been looking for the perfect grey cable knit sweater but they were all out of your size. As you approach the checkout you see that the exact sweater you're dying to have is sitting in the cart of a woman who is distracted and has her back turned. Do you grab the sweater? Yes or No?",
   "You gain 5 life points because your a bamf but lose $5 because it still costs to be cute",
   "Lose 1 lifepoint because you're probably never going to get anywhere in life",
-  lifePoints+=5,
-  dollars-=5,
-  lifePoints-=1
+  5,
+  -5,
+  -1
   );
 
 
@@ -103,9 +103,9 @@ shoppingDecision(
   "Starbucks! Can you say Pumpkin Spice? Do you identify as a \" basic bitch\"? If so grab yourself a tasty treat for $6. Yes or No.",
   "You gain 3 life points, it would be more but I'm trying not to condone your \"basic bitch\" behavior.",
   "Lose 4 lifepoints because caffine is pretty much a neccessity up in her'",
-  lifePoints+=3,
-  dollars-=6,
-  lifePoints-=4
+  3,
+  -6,
+  -4
 );
 
 
@@ -116,9 +116,9 @@ shoppingDecision(
   "Love me some cosmetics section. And you're feeling super ballsy and would like to buy a bright red shade of lipstick. You wonder if red would even look good on you, you should probably try it on real quick. Do you go ahead and try it on or freak just buy it. Do you just go ahead and buy it? Yes or No?",
   "You are a Target pro and know that they don't have testers. You lose $2 but you also gain 4 life points because you also know that red lipstick is directly related to the quality of your sex life.",
   "Ewww girl, you know Target doesn't have testers. That's unsanitary you lose 4 life points you ghetto white trash you.",
-  lifePoints+=4,
-  dollars-=2,
-  lifePoints-=4
+  4,
+  -2,
+  -4
   );
 
 
@@ -130,9 +130,9 @@ shoppingDecision(
   "You see the most adorable Halloween themed handtowels on sale for $4. Do you buy? Yes or No?",
   "You loose 3 life points because themed handtowels...ain\'t nobdy got time for dat!",
   "Gain 1 life point because you're not distracted by pointless things",
-  lifePoints-=3,
-  dollars-=4,
-  lifePoints+=1
+  -3,
+  -4,
+  1
   );
 
 
@@ -144,9 +144,9 @@ shoppingDecision(
   "You've been looking for the perfect grey cable knit sweater but they were all out of your size. As you approach the checkout you see that the exact sweater you're dying to have is sitting in the cart of a woman who is distracted and has her back turned. Do you grab the sweater? Yes or No?",
   "You gain 5 life points because your a bamf but lose $5 because it still costs to be cute",
   "Lose 1 lifepoint because you're probably never going to get anywhere in life",
-  lifePoints+=5,
-  dollars-=5,
-  lifePoints-=1
+  5,
+  -5,
+  -1
   );
 
 
@@ -158,9 +158,9 @@ shoppingDecision(
   "Starbucks! Can you say Pumpkin Spice? Do you identify as a \" basic bitch\"? If so grab yourself a tasty treat for $6. Yes or No.",
   "You gain 3 life points, it would be more but I'm trying not to condone your \"basic bitch\" behavior.",
   "Lose 4 lifepoints because caffine is pretty much a neccessity up in her'",
-  lifePoints+=3,
-  dollars-=6,
-  lifePoints-=4
+  3,
+  -6,
+  -4
 );
 
 
@@ -171,9 +171,9 @@ shoppingDecision(
   "Love me some cosmetics section. And you're feeling super ballsy and would like to buy a bright red shade of lipstick. You wonder if red would even look good on you, you should probably try it on real quick. Do you go ahead and try it on or freak just buy it. Do you just go ahead and buy it? Yes or No?",
   "You are a Target pro and know that they don't have testers. You lose $2 but you also gain 4 life points because you also know that red lipstick is directly related to the quality of your sex life.",
   "Ewww girl, you know Target doesn't have testers. That's unsanitary you lose 4 life points you ghetto white trash you.",
-  lifePoints+=4,
-  dollars-=2,
-  lifePoints-=4
+  4,
+  -2,
+  -4
   );
 
 
