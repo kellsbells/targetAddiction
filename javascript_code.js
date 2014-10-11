@@ -2,7 +2,7 @@
 alert("Just a glimpse of the red and white Target logo rains euphoria over you. Pulling into the parking lot of the holy land and you're certain you can see angels singing. Because you have an addiction you've decided to limit yourself to only spending $20 during this trip to Target. It seems impossible but you are strong and have been practicing self control. You start with $20 and 10 life points. Everytime you purchase something you lose money but can either gain or lose life points. The goal is to have earned the most life points with your $20. Poor shopping decisions will cost you life points and good shopping decisions will give you life points. If you run out of life points before you've spent your $20 you immediately lose.");
 
 
-var dollars = 5;
+var dollars = 20;
 var lifePoints = 10;
 
 
