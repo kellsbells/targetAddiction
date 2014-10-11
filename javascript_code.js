@@ -9,22 +9,22 @@ var lifePoints = 10;
 
 //Loop through array
 
-// alert("$1 section bonanza because 'Muerica! You can't loose any lifepoints during this bonanza but choose wisely because good shopping decisions will give you more life points. Every item will cost you $1");
+alert("$1 section bonanza because 'Muerica! You can't loose any lifepoints during this bonanza but choose wisely because good shopping decisions will give you more life points. Every item will cost you $1");
 
-// var oneDollarItems = ["Glass Jar", "Gel Pens", "Thank You Cards", "Burlap Table Runner", "Felt Animal Mask", "Children's Puzzle"];
+var oneDollarItems = ["Glass Jar", "Gel Pens", "Thank You Cards", "Burlap Table Runner", "Felt Animal Mask", "Children's Puzzle"];
 
-// for(i = 0; i < oneDollarItems.length; i++) {
-//   var bonanzaAnswer = prompt("Would you like to buy the " + oneDollarItems[i]).toLowerCase();
-//     if (bonanzaAnswer === "yes") {
-//       lifePoints += 2;
-//     }else if (bonanzaAnswer === "no"){
-//       lifePoints += 0;
-//     }else{
-//       alert("You did not reply with a \"Yes\" or \"No\". You don't deserve the amazing $1 item. Try again.")
-//     }
-// }
+for(i = 0; i < oneDollarItems.length; i++) {
+  var bonanzaAnswer = prompt("Would you like to buy the " + oneDollarItems[i]).toLowerCase();
+    if (bonanzaAnswer === "yes") {
+      lifePoints += 2;
+    }else if (bonanzaAnswer === "no"){
+      lifePoints += 0;
+    }else{
+      alert("You did not reply with a \"Yes\" or \"No\". You don't deserve the amazing $1 item. Try again.")
+    }
+}
 
-// alert("You have " + lifePoints + " lifepoints after that bonanza!");
+alert("You have " + lifePoints + " lifepoints after that bonanza!");
 
 
 
@@ -44,8 +44,8 @@ var shoppingDecision = function(prompt3, alert1, alert2, lifePointsDelta, dollar
       answer3.toLowerCase();
         if(answer3 === "yes") {
         alert(alert1);
-        (lifePoints) + (lifePointsDelta);
-        (dollars) + (dollarsDelta);
+        (lifePoints) = (lifePoints) + (lifePointsDelta);
+        (dollars) = (dollars) + (dollarsDelta);
       } else if (answer3 === "no") {
         alert(alert2);
         (lifePointsNo) + (lifePoints); 
